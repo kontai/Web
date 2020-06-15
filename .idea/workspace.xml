@@ -16,28 +16,193 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d9de442-3bcb-418d-83ea-a44478b2c1da" name="Default Changelist" comment=" 0609" />
+    <list default="true" id="0d9de442-3bcb-418d-83ea-a44478b2c1da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/Demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/demo/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/demo/js_array.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/demo/js_function.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/demo/js_function2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/demo/jsdemo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/demo/jsdemo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/test/jstest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/test/jstest2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/test/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/練習/Test0611/Demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/練習/Test0613/Demo1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/練習/Test0613/div.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/10_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/10_form.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1d6pAYwaDnq30oHXwb6R3ejONWA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\Web\Javascript" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.Demo1.html (1)">
+    <configuration name="01_list.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/HTML/01_list.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="10_form.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/HTML/10_form.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="13_div.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/HTML/13_div.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo1.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/練習/Test0613/Demo1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/練習/Test0611/Demo1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Demo1.html (1)" />
+        <item itemvalue="JavaScript Debug.10_form.html" />
+        <item itemvalue="JavaScript Debug.13_div.html" />
+        <item itemvalue="JavaScript Debug.01_list.html" />
+        <item itemvalue="JavaScript Debug.Demo1.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary=" 0609">
+      <created>1591670839791</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591670839791</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0d9de442-3bcb-418d-83ea-a44478b2c1da" name="Default Changelist" comment="" />
+      <created>1591755254263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591755254263</updated>
+      <workItem from="1591755257078" duration="11000" />
+      <workItem from="1591755276218" duration="673000" />
+      <workItem from="1591802230576" duration="3000" />
+      <workItem from="1591834026965" duration="4945000" />
+      <workItem from="1592007900226" duration="319000" />
+      <workItem from="1592008659467" duration="2286000" />
+      <workItem from="1592186583397" duration="192000" />
+      <workItem from="1592186782744" duration="351000" />
+      <workItem from="1592187169883" duration="1109000" />
+      <workItem from="1592188296309" duration="528000" />
+      <workItem from="1592188840340" duration="207000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=" 0609" />
+    <option name="LAST_COMMIT_MESSAGE" value=" 0609" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="801" y="94" key="CommitChangelistDialog2" timestamp="1591670838802">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="801" y="94" key="CommitChangelistDialog2/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1591670838802" />
+    <state x="961" y="327" key="SettingsEditor" timestamp="1592189048268">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="961" y="327" key="SettingsEditor/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1592008013400" />
+    <state x="961" y="327" key="SettingsEditor/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592189048268" />
+    <state x="773" y="364" key="Vcs.Push.Dialog.v2" timestamp="1591670847746">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="773" y="364" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1591670847746" />
+    <state x="1008" y="510" key="cloudConfig.PluginsDialog" timestamp="1592188282589">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1008" y="510" key="cloudConfig.PluginsDialog/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592188282589" />
+    <state x="1141" y="544" width="861" height="381" key="cloudConfig.SelfSettingsDialog" timestamp="1592188434409">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1141" y="544" width="861" height="381" key="cloudConfig.SelfSettingsDialog/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592188434409" />
+    <state x="850" y="304" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591840939558">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="850" y="304" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1591840939558" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1592009640815">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1592009640815" />
   </component>
 </project>
