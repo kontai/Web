@@ -1,14 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<!--meta http-equiv="refresh" content="3;url=http://www.sina.com.cn" /-->
 		<title>Untitled Document</title>
 	</head>
 	<body>
 		<!--
-�ύ��ʽ��get�ύ��
-��ַ����http://10.1.31.69:9090/?user=abc&psw=123&repsw=123&sex=nan&tech=java&tech=html&country=cn
+提交方式：get提交。
+地址欄：http://10.1.31.69:9090/?user=abc&psw=123&repsw=123&sex=nan&tech=java&tech=html&country=cn
 		
 GET /?user=abc&psw=123&repsw=123&sex=nan&tech=java&tech=html&country=cn HTTP/1.1
 Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
@@ -19,8 +19,8 @@ Host: 10.1.31.69:9090
 Connection: Keep-Alive
 
 
-�ύ��ʽ��POST
-��ַ����http://10.1.31.69:9090/
+提交方式：POST
+地址欄：http://10.1.31.69:9090/
 
 POST / HTTP/1.1
 Accept: image/gif, image/x-xbitmap, image/jpeg, image/pjpeg, application/x-shockwave-flash, application/vnd.ms-excel, application/vnd.ms-powerpoint, application/msword, */*
@@ -37,81 +37,81 @@ user=hahah&psw=8989&repsw=8989&sex=nv&tech=html&tech=css&country=usa
 		
 		
 		
-		GET�ύ��POST�ύ������
+		GET提交和POST提交的區別？
 		1,
-		get�ύ���ύ����Ϣ����ʾ�ڵ�ַ���С�
-		post�ύ���ύ����Ϣ����ʾ��ַ���С�
+		get提交，提交的信息都顯示在地址欄中。
+		post提交，提交的信息不顯示地址欄中。
 		
-		2��
-		get�ύ���������е�������Ϣ����ȫ��
-		post�ύ������������Ϣ��ȫ��
+		2，
+		get提交，對於敏感的數據信息不安全。
+		post提交，對於敏感信息安全。
 		
-		3��
-		get�ύ�����ڴ����ݲ��У���Ϊ��ַ���洢������ޡ�
-		post�ύ�������ύ��������ݡ� 
+		3，
+		get提交，對於大數據不行，因為地址欄存儲體積有限。
+		post提交，可以提交大體積數據。 
 		
-		4��
-		get�ύ������Ϣ��װ����������Ϣ���������С�
-		post�ύ������Ϣ��װ�����������С�
+		4，
+		get提交，將信息封裝到了請求消息的請求行中。
+		post提交，將信息封裝到了請求體中。
 		
-		�ڷ���˵�һ������
-		������ֽ������ύ��tomcat��������������Ĭ�ϻ���iso8859-1���н����������룬
-		ͨ��iso8859-1���б��룬����ָ��������������롣���ɡ�
-		���ַ�ʽ��get�ύ��post�ύ����Ч�� 
+		在服務端的一個區別。
+		如果出現將中文提交到tomcat服務器，服務器默認會用iso8859-1進行解碼會出現亂碼，
+		通過iso8859-1進行編碼，在用指定的中文碼表解碼。即可。
+		這種方式對get提交和post提交都有效。 
 		
-		���Ƕ���post�ύ��ʽ�ύ�����ģ�������һ�ֽ���취������ֱ��ʹ�÷����һ������
-		request�����setCharacterEncoding����ֱ������ָ������������Ϳ��Խ��������ݽ���������
-		�������ֻ���������е����ݽ��н��롣 
-		
-		
-		���������������ύ������ʹ��post��
+		但是對於post提交方式提交的中文，還有另一種解決辦法，就是直接使用服務端一個對像
+		request對象的setCharacterEncoding方法直接設置指定的中文碼表就可以將中文數據解析出來。
+		這個方法只對請求體中的數據進行解碼。 
 		
 		
+		綜上所述：表單提交，建議使用post。
 		
-		�ͷ���˽��������ַ�ʽ��
-		1����ַ������url��ַ��get
-		2�������ӡ� get
-		3�������� get ��  post
+		
+		
+		和服務端交互的三種方式：
+		1，地址欄輸入url地址。get
+		2，超鏈接。 get
+		3，表單。 get 和  post
 		
 
 		
-		����ڿͻ��˽�����ǿ�͵�У��(ֻҪ��һ����������Ǵ������޷������ύ�ġ�ֻ��ȫ�Բſ����ύ)
-		�ʣ���������ݺ󣬻���ҪУ����
-		��Ҫ��Ϊ�˰�ȫ�ԡ�
+		如果在客戶端進行增強型的校驗(只要有一個組件內容是錯誤，是無法繼續提交的。只有全對才可以提交)
+		問，服務端數據後，還需要校驗嗎？
+		需要，為了安全性。
 		
-		��������������ǿ�͵�У�飬�ͻ��˻���ҪУ����
-		��Ҫ����ΪҪ����û�����������Ч��������������˵�ѹ����
+		如果服務端做了增強型的校驗，客戶端還需要校驗嗎？
+		需要，因為要提高用戶的上網體驗效果，減輕服務器端的壓力。
 		
 		
 		-->
 		
 		
-		<form action="http://192.168.50.190:10222" method="post">
+		<form action="http://10.1.31.69:9090" method="post">
 			<table border="1" bordercolor="#0000ff" cellpadding=10 cellspacing=0 width=600>
 				<tr>
-					<th colspan="2">ע�����</th>
+					<th colspan="2">註冊表單</th>
 				</tr>				
 				<tr>
-					<td>�û����ƣ�</td>
+					<td>用戶名稱：</td>
 					<td><input type="text" name="user" /></td>
 				</tr>				
 				<tr>
-					<td>�������룺</td>
+					<td>輸入密碼：</td>
 					<td><input type="password" name="psw" /></td>
 				</tr>				
 				<tr>
-					<td>ȷ�����룺</td>
+					<td>確認密碼：</td>
 					<td><input type="password" name="repsw" /></td>
 				</tr>				
 				<tr>
-					<td>ѡ���Ա�</td>
+					<td>選擇性別：</td>
 					<td>
-						<input type="radio" name="sex" value="nan" />�� 
-						<input type="radio" name="sex" value="nv" />Ů
+						<input type="radio" name="sex" value="nan" />男 
+						<input type="radio" name="sex" value="nv" />女
 					</td>
 				</tr>				
 				<tr>
-					<td>ѡ������</td>
+					<td>選擇技術：</td>
 					<td>
 						<input type="checkbox" name="tech" value="java" />JAVA
 						<input type="checkbox" name="tech" value="html" />HTML
@@ -119,20 +119,20 @@ user=hahah&psw=8989&repsw=8989&sex=nv&tech=html&tech=css&country=usa
 					</td>
 				</tr>				
 				<tr>
-					<td>ѡ����ң�</td>
+					<td>選擇國家：</td>
 					<td>
 						<select name="country">
-							<option value="none">--ѡ�����--</option>
-							<option value="usa" >--����--</option>
-							<option value="en">--Ӣ��--</option>
-							<option value="cn">--�й�--</option>
+							<option value="none">--選擇國家--</option>
+							<option value="usa">--美國--</option>
+							<option value="en">--英國--</option>
+							<option value="cn">--中國--</option>
 						</select>
 					</td>
 				</tr>				
 				<tr>
 					<th colspan="2">
-						<input type="reset" value="�������" />
-						<input type="submit" value="�ύ����" />
+						<input type="reset" value="清除數據" />
+						<input type="submit" value="提交數據" />
 					</th>
 				</tr>				
 			</table>

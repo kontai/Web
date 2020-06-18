@@ -16,27 +16,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d9de442-3bcb-418d-83ea-a44478b2c1da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Web.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javascript/Demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javascript/demo/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javascript/demo/js_array.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javascript/demo/js_function.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javascript/demo/js_function2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javascript/demo/jsdemo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javascript/demo/jsdemo2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javascript/test/jstest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javascript/test/jstest2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Javascript/test/table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/練習/Test0611/Demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/練習/Test0613/Demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/練習/Test0613/div.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Default_Changelist.xml" beforeDir="false" />
+    <list default="true" id="0d9de442-3bcb-418d-83ea-a44478b2c1da" name="Default Changelist" comment="0615">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/10_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/10_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/04_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/04_table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/12_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/12_other.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +68,7 @@
       <recent name="D:\workspace\Web\Javascript" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Demo1.html (1)">
+  <component name="RunManager" selected="JavaScript Debug.01_list.html">
     <configuration name="01_list.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/HTML/01_list.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -103,10 +86,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.01_list.html" />
         <item itemvalue="JavaScript Debug.Demo1.html (1)" />
         <item itemvalue="JavaScript Debug.10_form.html" />
         <item itemvalue="JavaScript Debug.13_div.html" />
-        <item itemvalue="JavaScript Debug.01_list.html" />
         <item itemvalue="JavaScript Debug.Demo1.html" />
       </list>
     </recent_temporary>
@@ -138,9 +121,25 @@
       <workItem from="1592186782744" duration="351000" />
       <workItem from="1592187169883" duration="1109000" />
       <workItem from="1592188296309" duration="528000" />
-      <workItem from="1592188840340" duration="207000" />
+      <workItem from="1592188840340" duration="485000" />
+      <workItem from="1592190613472" duration="46000" />
+      <workItem from="1592190673536" duration="59000" />
+      <workItem from="1592190747067" duration="39000" />
+      <workItem from="1592190798832" duration="1036000" />
+      <workItem from="1592264707208" duration="1476000" />
+      <workItem from="1592273087799" duration="2129000" />
+      <workItem from="1592277260083" duration="780000" />
+      <workItem from="1592351970679" duration="3532000" />
+      <workItem from="1592441113162" duration="1249000" />
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="0615">
+      <created>1592189263484</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592189263484</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,30 +171,36 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" 0609" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 0609" />
+    <MESSAGE value="0615" />
+    <option name="LAST_COMMIT_MESSAGE" value="0615" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1140" y="499" width="752" height="641" key="#Notifications" timestamp="1592442373125">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1140" y="499" width="752" height="641" key="#Notifications/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592442373125" />
     <state x="801" y="94" key="CommitChangelistDialog2" timestamp="1591670838802">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="801" y="94" key="CommitChangelistDialog2/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1591670838802" />
-    <state x="961" y="327" key="SettingsEditor" timestamp="1592189048268">
+    <state x="961" y="327" key="SettingsEditor" timestamp="1592277990151">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="961" y="327" key="SettingsEditor/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1592008013400" />
-    <state x="961" y="327" key="SettingsEditor/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592189048268" />
-    <state x="773" y="364" key="Vcs.Push.Dialog.v2" timestamp="1591670847746">
+    <state x="961" y="327" key="SettingsEditor/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592277990150" />
+    <state x="773" y="364" key="Vcs.Push.Dialog.v2" timestamp="1592189319950">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="773" y="364" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1591670847746" />
-    <state x="1008" y="510" key="cloudConfig.PluginsDialog" timestamp="1592188282589">
+    <state x="773" y="364" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592189319950" />
+    <state x="1008" y="510" width="970" height="381" key="cloudConfig.PluginsDialog" timestamp="1592190771199">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1008" y="510" key="cloudConfig.PluginsDialog/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592188282589" />
-    <state x="1141" y="544" width="861" height="381" key="cloudConfig.SelfSettingsDialog" timestamp="1592188434409">
+    <state x="1008" y="510" width="970" height="381" key="cloudConfig.PluginsDialog/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592190771199" />
+    <state x="1141" y="544" width="861" height="381" key="cloudConfig.SelfSettingsDialog" timestamp="1592277481747">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1141" y="544" width="861" height="381" key="cloudConfig.SelfSettingsDialog/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592188434409" />
+    <state x="1141" y="544" width="861" height="381" key="cloudConfig.SelfSettingsDialog/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592277481746" />
     <state x="850" y="304" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591840939558">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

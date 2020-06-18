@@ -1,41 +1,41 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="tw">
+<html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Untitled Document</title>
 	</head>
 	<body>
 		<!--
-		���Ҫ��������ύ���ݣ������е����������name��value���ԡ�
-		���ڸ�����˻�ȡ���ݷ��㡣
+		如果要給服務端提交數據，表單中的組件必須有name和value屬性。
+		用於給服務端獲取數據方便。
 		-->
 		<form>
-			�������ƣ�<input type="text" name="user" value="" /><br/>
-			�������룺<input type="password" name="psw"  /><br/>	
-			ѡ���Ա�<input type="radio" name="sex" value="nan" />��
-				     <input type="radio" name="sex" value="nv" checked="checked" />Ů<br/>
-			ѡ������<input type="checkbox" name="tech" value="java"/>JAVA
+			輸入名稱：<input type="text" name="user" value="" /><br/>
+			輸入密碼：<input type="password" name="psw"  /><br/>	
+			選擇性別：<input type="radio" name="sex" value="nan" />男
+				     <input type="radio" name="sex" value="nv" checked="checked" />女<br/>
+			選擇技術：<input type="checkbox" name="tech" value="java"/>JAVA
 					 <input type="checkbox" name="tech" value="html"/>HTML
 					 <input type="checkbox" name="tech" value="css"/>CSS<BR/>
-			ѡ���ļ���<input type="file" name="file"/><br/>		 
-			һ��ͼƬ��<input type="image" src="11.jpg"/><br/>
-			<!--���ݲ���Ҫ�ͻ���֪�������ǿ��Խ����ύ����ˡ�-->
-			���������<input type="hidden" name="myke" value="myvalue"/><br/>	 
-			һ����ť��<input type="button" value="�и���ť" onclick="alert('�и���ţ')" /><br/>
+			選擇文件：<input type="file" name="file"/><br/>		 
+			一個圖片：<input type="image" src="11.jpg"/><br/>
+			<!--數據不需要客戶端知道，但是可以將其提交服務端。-->
+			隱藏組件：<input type="hidden" name="myke" value="myvalue"/><br/>	 
+			一個按鈕：<input type="button" value="有個按鈕" onclick="alert('有個阿牛')" /><br/>
 			
 			
 			
 			<select name="country">
-					<option value="none">--ѡ�����--</option>
-					<option value="usa">����</option>
-					<option value="en">Ӣ��</option>
-					<option value="cn" selected="selected">�й�</option>
+					<option value="none">--選擇國家--</option>
+					<option value="usa">美國</option>
+					<option value="en">英國</option>
+					<option value="cn" selected="selected">中國</option>
 			</select>
 			
 			<textarea name="text"></textarea>
 			<br/>
 					 
-			<input type="reset" value="�������"/><input type="submit" value="�ύ����" />
+			<input type="reset" value="清除數據"/><input type="submit" value="提交數據" />
 		</form>
 		
 	</body>
