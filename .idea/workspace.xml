@@ -17,9 +17,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d9de442-3bcb-418d-83ea-a44478b2c1da" name="Default Changelist" comment="0615">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/29522d657a4ecd88dc0850bd01d73a9aeccf2cae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/a/2a6832e7485ddaf42959efc52d895445e0e18a29" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8dcf5a32e83e413cdda30e71aaaecc3c761d035" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f601e7ea6767dc51acfe49c54c187a3b2643aeed" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/imgs/photo-1592490440473-b7f824510e50.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/imgs/photo-1592611379315-dd68a03a815d.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/表單form.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/練習/Test0619/01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/練習/Test0619/02_table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/練習/Test0619/image/coffee-cup-mug-cafe.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/練習/Test0621/01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/練習/Test0621/formSet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/練習/Test0621/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/練習/Test0621/item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/28e3503f3cfed1d27d87c95a3775efef9b23d05d" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/28e3503f3cfed1d27d87c95a3775efef9b23d05d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/7400d5df0c20a45f65de46fac4d1e9071856ab28" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/7400d5df0c20a45f65de46fac4d1e9071856ab28" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a911121aca09d230ebad55a40936a5246fbaf4b7" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/9/a911121aca09d230ebad55a40936a5246fbaf4b7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/04_table.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/04_table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/12_other.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/12_other.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/03_img.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/03_img.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/08_frame/framedemo.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/08_frame/framedemo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/10_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/10_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,37 +80,43 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HTML/imgs" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\Web\HTML\imgs" />
       <recent name="D:\workspace\Web\Javascript" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\workspace\Web\練習\Test0619" />
+      <recent name="D:\workspace\Web\image" />
+    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.01_list.html">
-    <configuration name="01_list.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/HTML/01_list.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.framedemo.html">
+    <configuration name="01.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/練習/Test0621/01.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="10_form.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/HTML/10_form.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="13_div.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/HTML/13_div.html" useBuiltInWebServerPort="true">
+    <configuration name="formSet.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/練習/Test0621/formSet.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Demo1.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/練習/Test0613/Demo1.html" useBuiltInWebServerPort="true">
+    <configuration name="framedemo.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/HTML/08_frame/framedemo.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Demo1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/練習/Test0611/Demo1.html" useBuiltInWebServerPort="true">
+    <configuration name="item.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Web/練習/Test0621/item.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.01_list.html" />
-        <item itemvalue="JavaScript Debug.Demo1.html (1)" />
+        <item itemvalue="JavaScript Debug.framedemo.html" />
+        <item itemvalue="JavaScript Debug.item.html" />
+        <item itemvalue="JavaScript Debug.formSet.html" />
+        <item itemvalue="JavaScript Debug.01.html (1)" />
         <item itemvalue="JavaScript Debug.10_form.html" />
-        <item itemvalue="JavaScript Debug.13_div.html" />
-        <item itemvalue="JavaScript Debug.Demo1.html" />
       </list>
     </recent_temporary>
   </component>
@@ -131,6 +157,14 @@
       <workItem from="1592277260083" duration="780000" />
       <workItem from="1592351970679" duration="3532000" />
       <workItem from="1592441113162" duration="1249000" />
+      <workItem from="1592526354520" duration="349000" />
+      <workItem from="1592526727711" duration="3140000" />
+      <workItem from="1592531461273" duration="39000" />
+      <workItem from="1592531552001" duration="2462000" />
+      <workItem from="1592534029267" duration="2488000" />
+      <workItem from="1592701943130" duration="3471000" />
+      <workItem from="1592705820270" duration="10897000" />
+      <workItem from="1592735956552" duration="3665000" />
     </task>
     <task id="LOCAL-00002" summary="0615">
       <created>1592189263484</created>
@@ -179,15 +213,24 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1140" y="499" width="752" height="641" key="#Notifications/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592442373125" />
+    <state x="1079" y="563" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592736802851">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1079" y="563" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592532487319" />
+    <state x="1079" y="563" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/3840.0.1152.2008/-1920.492.1920.1040@0.0.2560.1400" timestamp="1592736802851" />
+    <state x="1041" y="454" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1592736061483">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1041" y="454" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.2560.1400/3840.0.1152.2008/-1920.492.1920.1040@0.0.2560.1400" timestamp="1592736061483" />
     <state x="801" y="94" key="CommitChangelistDialog2" timestamp="1591670838802">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="801" y="94" key="CommitChangelistDialog2/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1591670838802" />
-    <state x="961" y="327" key="SettingsEditor" timestamp="1592277990151">
+    <state x="961" y="327" key="SettingsEditor" timestamp="1592729912953">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="961" y="327" key="SettingsEditor/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1592008013400" />
-    <state x="961" y="327" key="SettingsEditor/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592277990150" />
+    <state x="961" y="327" key="SettingsEditor/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592729912953" />
     <state x="773" y="364" key="Vcs.Push.Dialog.v2" timestamp="1592189319950">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -201,13 +244,23 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1141" y="544" width="861" height="381" key="cloudConfig.SelfSettingsDialog/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592277481746" />
-    <state x="850" y="304" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591840939558">
+    <state x="850" y="304" width="532" height="795" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1592724330358">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="850" y="304" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1591840939558" />
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1592009640815">
+    <state x="850" y="304" width="532" height="795" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592724330358" />
+    <state x="3901" y="367" width="2073" height="1168" maximized="true" key="dock-window-1" timestamp="1592531897236">
+      <screen x="3840" y="380" width="1152" height="2008" />
+    </state>
+    <state x="3901" y="367" width="2073" height="1168" maximized="true" key="dock-window-1/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592531897236" />
+    <state x="3840" y="380" width="1166" height="946" maximized="true" key="dock-window-2" timestamp="1592534335114">
+      <screen x="3840" y="380" width="1152" height="2008" />
+    </state>
+    <state x="3840" y="380" width="1166" height="946" maximized="true" key="dock-window-2/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592534335114" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1592730387005">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400/-1680.539.1680.1010/3840.396.1152.2008@0.0.2560.1400" timestamp="1592009640815" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400/-1768.605.1768.952/3840.380.1152.2008@0.0.2560.1400" timestamp="1592730387005" />
   </component>
 </project>

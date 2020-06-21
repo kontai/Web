@@ -10,17 +10,21 @@
 		用於給服務端獲取數據方便。
 		-->
 		<form>
-			輸入名稱：<input type="text" name="user" value="" /><br/>
+
+			輸入名稱：<input type="text" name="user" value=""	placeholder="請輸入使用者名稱" /><br/>
 			輸入密碼：<input type="password" name="psw"  /><br/>	
 			選擇性別：<input type="radio" name="sex" value="nan" />男
 				     <input type="radio" name="sex" value="nv" checked="checked" />女<br/>
 			選擇技術：<input type="checkbox" name="tech" value="java"/>JAVA
 					 <input type="checkbox" name="tech" value="html"/>HTML
 					 <input type="checkbox" name="tech" value="css"/>CSS<BR/>
+			手機號碼:<input type="number" name="phone Number"><br />
+<!--			手機號碼:<input type="tel" name="phone Number"><br /> &lt;!&ndash; 手機上才可以看到效果(小鍵盤) &ndash;&gt;-->
 			選擇文件：<input type="file" name="file"/><br/>		 
 			一個圖片：<input type="image" src="11.jpg"/><br/>
-			<!--數據不需要客戶端知道，但是可以將其提交服務端。-->
-			隱藏組件：<input type="hidden" name="myke" value="myvalue"/><br/>	 
+
+			<!--隱藏域,數據不需要客戶端知道，但是可以將其提交服務端 (主要是用來存放葉面上的一些ID信息)。-->
+			隱藏組件：<input type="hidden" name="myke" value="myvalue"/><br/>
 			一個按鈕：<input type="button" value="有個按鈕" onclick="alert('有個阿牛')" /><br/>
 			
 			
