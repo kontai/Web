@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        #usrtips{
+            font-weight: bold;
+            font-family: "OPPOSans H";
+            font-size: inherit;
+        }
+        table>td{
+            text-align: right;
+        }
+    </style>
+
+    <script>
+
+
+        function outBox(Id,MSG) {
+            var outBox = document.getElementById("usrtips");
+            var usrname = document.getElementById("usernameBox").value;
+            if (usrname.length <= 6) {
+                outBox.innerHTML = "<font color=\"red\" size=\"2px\ align=\"left\">MSG+\"字符不可小於7位\"</font>";
+            } else {
+                outBox.innerHTML = "<font color=\"green\" size=\"2px\" align=\"left\">字符已足夠了</font>";
+            }
+        }
+
+        function inBox() {
+            document.getElementById("usrtips");
+            usrtips.innerHTML = "請輸入";
+        }
+    </script>
+</head>
+<body>
+<form>
+    <table align="center" width="500px">
+        <tr>
+            <td align="right">使用者名稱</td>
+            <td>
+                <input type="text" onfocus="inBox()" onkeyup="outBox(id,輸入有誤)" id="usernameBox">
+                <span id="usrtips"></span>
+            </td>
+        </tr>
+        <tr>
+            <td>密碼</td>
+            <td>
+                <input type="password" onfocus="inBox()" onkeyup="outBox(passwordBox)" id="passwordBox">>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

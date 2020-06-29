@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo1</title>
+
+    <script>
+        function MSG(){
+            // alert("knock knock");
+           var Div_textId= document.getElementById("Text-1")   // 將id為Text-1引用到Div_textId
+            Div_textId.innerHTML="<p title='abcd' style='color: #00CC00'>點擊後的文字</p>"
+
+            var Div_textId2= document.getElementById("Text-2")   // 將id為Text-1引用到Div_textId
+            Div_textId2.innerText="<p title='abcd' style='color: #00CC00'>點擊後的文字</p>"
+        }
+    </script>
+</head>
+
+<body>
+<form>
+    <input type="button" onclick="MSG()" value="click me">
+
+    <div id="Text-1"> 這是原本的文字 (innerHTML)</div>
+    <div id="Text-2"> 這是原本的文字 (innerText)</div>
+</form>
+
+
+
+</body>
+</html>

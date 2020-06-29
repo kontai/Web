@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo2</title>
+
+    <script>
+        function Verify() {
+            var name = document.getElementById("userName");
+            // alert(name.value);
+            if (name.value.length < 7) {
+                alert("username cat't less than 7");
+                return false;
+            }
+
+            var passWord = document.getElementById("passWord");
+            if (passWord.value.length < 7) {
+                alert("password cat't less than 6");
+                return false;
+            }
+
+            var eMail = document.getElementById("eMail");
+            if (/^[a-zA-Z0-9.!#$%&’*+/=?^_\`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$/.test(eMail.value)) {
+                return true;
+            } else {
+                alert("e-mail 格式錯誤 " + eMail.value);
+                eMail.
+                return false;
+            }
+
+        }
+    </script>
+</head>
+<body>
+<form action="https://www.google.com">
+    <div>使用者名稱:<input type="text" id="userName" placeholder="username"></div>
+    <div>密碼:<input type="password" id="passWord" placeholder="password"></div>
+    <!--    <div>E-Mail:<input type="email" id="Mail" placeholder="請輸入有效信箱"></div>-->
+    <div>E-Mail:<input type="text" id="eMail" placeholder="請輸入有效信箱"></div>
+    <input type="submit" onclick="return Verify()">
+</form>
+
+</body>
+</html>
