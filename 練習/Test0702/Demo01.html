@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+
+        function But() {
+            var pp = document.getElementById("item1");
+            var node1=document.getElementById("item2");
+            // pp.appendChild(node1.value);
+            pp.innerHTML="abc";
+
+            // pp.appendChild(node1);
+
+
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="這是按鈕" onclick="But()">
+<div hidden="off" id="item1">
+    say something....
+</div>
+<div  id="item2">"have nice day</div>
+</body>
+</html>

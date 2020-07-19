@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="demo" ></div>
+<script type="text/javascript">
+    var a =new  function () {
+        // document.write("test");
+        var chText=document.getElementById("demo");
+        chText.innerHTML="<font color='blue'>abc</font>";
+        document.write("<font color='blue'>abc</font>");
+        var n="13"+'a';
+        // document.write(isNaN("1"));
+        var date=new Date();
+        document.write(date);
+        document.write(date.isInstanceOf("String"))
+    }
+</script>
+</body>
+</html>

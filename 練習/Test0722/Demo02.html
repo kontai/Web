@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!--&lt;!&ndash;    <meta name="viewport"&ndash;&gt;-->
+<!--&lt;!&ndash;          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">&ndash;&gt;-->
+<!--    <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    <title>Document</title>
+    <script src="../../js庫/jquery-2.1.0.js"></script>
+    <script >
+        function changeColor() {
+            var val = document.getElementById("table01");
+            var row=val.rows;
+            for(var i=1;i<row.length;i++) {
+                if(i%2==0){
+                    row[i].bgColor="red";
+                }else{
+                    row[i].bgColor="green";
+                }
+            }
+        }
+
+        function  hov() {
+            var onfocus1=document.getElementById("table01");
+            onfocus1.style.backgroundColor="cyan";;
+
+        }
+
+        // $(function () {
+        //     $("tr:even:gt(0)").css({"background-color":"red"});
+        //     $("tr:odd").css({"background-color":"green"});
+        //     $("th").css({"background-color":"green"});
+        // })
+
+        // $(function () {
+        //     $("#chkAll").click(function(){
+        //         $("input[type='checkbox']:gt(0)").prop("checked",this.checked);
+        //     })
+        // })
+function inital(){
+    changeColor()
+    hov();
+}
+
+    </script>
+
+</head>
+<body onload="inital()">>
+<table border="1px" width="300px" id="table01" onmouseover="hov()">
+    <thead>
+    <tr>
+    <td><input type="checkbox" id="chkAll"></td>
+    <td>ID</td>
+    <td>分類</td>
+    <td>商品名稱</td>
+    <td>數量</td>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>01</td>
+        <td>家電</td>
+        <td>電風扇</td>
+        <td>
+            <label>
+                <select name="count" class="count">
+                    <option value="---">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>02</td>
+        <td>家電</td>
+        <td>冷氣</td>
+        <td>
+            <label>
+                <select name="count" class="count">
+                    <option value="---">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>03</td>
+        <td>服飾</td>
+        <td>T恤</td>
+        <td>
+            <label>
+                <select name="count" class="count">
+                    <option value="---">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>04</td>
+        <td>家具</td>
+        <td>沙發</td>
+        <td>
+            <label>
+                <select name="count" class="count">
+                    <option value="---">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>05</td>
+        <td>文具</td>
+        <td>鉛筆</td>
+        <td>
+            <label>
+                <select name="count" class="count">
+                    <option value="---">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+        </td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td>06</td>
+        <td>食品</td>
+        <td>牛肉乾</td>
+        <td>
+            <label>
+                <select name="count" class="count">
+                    <option value="---">---</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+        </td>
+    </tr>
+    </tbody>
+
+</table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo1</title>
+
+    <script>
+        var cnt=0
+        function clickme(){
+            var div=document.getElementById("innerP");
+            var p=document.createElement("p");
+            var li=document.createElement("li");
+            var addText=document.createTextNode((cnt++)+"x click");
+            li.appendChild(addText);
+            p.appendChild(li);
+            div.appendChild(p);
+        }
+    </script>
+</head>
+<body>
+    <input type="button"  value="點我添加" onclick="clickme()">
+    <ol>
+        <div id="innerP"></div>
+    </ol>
+</body>
+</html>

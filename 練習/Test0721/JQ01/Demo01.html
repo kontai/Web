@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script  type="text/javascript" src="../../../js庫/jquery-1.11.0.js"></script>
+    <script>
+        $(function () {
+            $("#btn2").click(function () {
+                $("#text").html("test");
+            })
+
+            var $bt=$("#text");
+            var b01=$bt.get(0);
+            b01.html("101");
+        })
+       // $ (function () {
+       //      $("#btn2").click(function () {
+       //          $("#text").html("<span >內容已經成功修改!</span>");
+       //      })
+       //  });
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" id="btn" value="js button">
+        <input type="button" id="btn2" value="jq button">
+            </div>
+<div id="text">
+    這是將要被修改的文字,,,,
+</div>
+</body>
+</html>

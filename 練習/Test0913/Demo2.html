@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+    var staticA = 3;
+
+    function classA(name, age) {
+        this.A=staticA;
+        this.name = name;
+        this.age = age;
+    }
+
+    var a = new classA("kontai", 18);
+    document.write(a.A);
+    staticA++;
+    document.write('<br/>');
+    var b = new classA("john", 39);
+    document.write(b.A);
+
+
+</script>
+</body>
+</html>

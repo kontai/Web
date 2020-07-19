@@ -52,11 +52,8 @@ a:visited {color:#00FF00;}	/* 已被访问的链接 */
 a:hover {color:#FF00FF;}	/* 鼠标指针移动到链接上 */
 a:active {color:#0000FF;}	/* 正在被点击的链接 */
 ```
-    
-    
-    
-    
-    
+
+
     
     
     
