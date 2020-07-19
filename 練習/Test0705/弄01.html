@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        td {
+            color: white;
+            font-weight: bold;
+            /*text-align: right;*/
+        }
+        span{
+            color: red;
+        }
+
+        input {
+            color: grey;
+        }
+        img{
+            width: 150px;
+            height: 220px;
+
+        }
+    </style>
+<script type="application/javascript">
+    function on_focus() {
+        var user_vertify = document.getElementById("usr_inner");
+        user_vertify.innerHTML = "字數太少";
+    }
+    function calc_len() {
+        var va1=document.getElementById("username");
+        var user_verify = document.getElementById("usr_inner");
+        if(va1.value.length>=5)
+        {
+            user_verify.style.color ="cyan";
+            user_verify.innerHTML = "字數已足夠!!";
+        }
+    }
+    var cnt=0;
+    function change_img() {
+        var img1=document.getElementById("img");
+        var str="../../Image/products/c_000";
+            var i=(cnt++)%5+1
+            img.src=str+i+".jpg";
+            if(cnt==30)
+            {
+                img.display="none";;
+            }
+    }
+    function img_run() {
+        setInterval("change_img()",1000);
+    }
+    </script>
+</head>
+
+<body bgcolor="black" onload="img_run()">
+<form action="localhost">
+    <table align="center" border="0" cellspacing="0" cellpadding="5" width="300">
+        <caption><h3 style="color:darkgrey;font-weight: bold background-color:darkgreen" >註冊表單</h3></caption>
+        <tr>
+            <td>
+                使用者名稱
+            </td>
+            <td>
+                <input type="text" placeholder="不可超過10字" maxlength="10" id="username"  onfocus="on_focus()" onkeyup="calc_len()">
+                <span id="usr_inner"></span></td>
+        </tr>
+        <tr>
+            <td>
+                密碼
+            </td>
+            <td>
+                <input type="password" placeholder="不可超過10字" maxlength="10" id="passw">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                性別
+            </td>
+            <td>
+                <span style="color: red">男</span>
+                <input type="radio" name="sex" value="male">
+                <span style="color: red">女</span>
+                <input type="radio" style="color: blue" name="sex" value="female">
+                <span style="color: red">人妖</span>
+                <input type="radio" style="color: blue" name="sex" value="half-half">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                電子信箱
+            </td>
+            <td>
+                <input type="email" placeholder="請輸入有效信箱">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>&lt有話要說:&gt</p>
+                <textarea cols="60" rows="10">
+            </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <hr width="350px" color="cyan"/>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" w align="center">
+                <input type="reset" value="清除">
+                <input type="submit" value="提交" id="go">
+            </td>
+        </tr>
+    </table>
+</form>
+<br />
+<br />
+<br />
+<div align="center" >
+    <img src="../../Image/products/c_0001.jpg" id="img">
+</div>
+
+</body>
+</html>

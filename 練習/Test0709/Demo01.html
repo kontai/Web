@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<!--    <style>-->
+<!--        #contain>li{-->
+<!--            background-color: #2aabd2;-->
+<!--        }-->
+<!--        #contain li{-->
+<!--            background-color: #F00;-->
+<!--        }-->
+<!--    </style>-->
+
+    <script src="../../JQuery/jquery-1.11.0.js"></script>
+    <script>
+        $(function () {
+            $("#clickMe").click(function () {
+                $("div li").css("background-color","#f00");
+                $("div li").css("color","#FFF");
+            })
+        })
+    </script>
+</head>
+<body>
+<input type="button" value="button1" id="clickMe">
+    <div id="contain">
+        <ul>
+            <li>Item00</li>
+            <ul>
+                <li>Item01</li>
+            </ul>
+            <li>Item02</li>
+            <li>Item03</li>
+            <li>Item04</li>
+            <p>Item05</p>
+            <p>Item06</p>
+        </ul>
+        <p>Item07</p>
+        <p>Item08</p>
+        <li>Item09</li>
+    </div>
+</body>
+</html>

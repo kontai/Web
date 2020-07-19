@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="application/javascript">
+        var Region = [
+            [
+                "200	仁愛區",
+                "201	信義區",
+                "202	中正區",
+                "203	中山區",
+                "204	安樂區",
+                "205	暖暖區",
+                "206	七堵區"
+            ],
+            [
+                "100	中正區",
+                "103	大同區",
+                "104	中山區",
+                "105	松山區",
+                "106	大安區",
+                "108	萬華區",
+                "110	信義區",
+                "111	士林區",
+                "112	北投區",
+                "114	內湖區",
+                "115	南港區",
+                "116	文山區",
+            ],
+            [
+                "320	中壢區",
+                "324	平鎮區",
+                "325	龍潭區",
+                "326	楊梅區",
+                "327	新屋區",
+                "328	觀音區",
+                "330	桃園區",
+                "333	龜山區",
+                "334	八德區",
+                "335	大溪區",
+                "336	復興區",
+                "337	大園區",
+                "338	蘆竹區",
+            ]
+        ]
+
+        function onChange() {
+            var city=document.getElementById("leftList");
+            var selected_value=city.value;
+            var selected_region=Region[selected_value];
+
+            var region_select=document.getElementById("rightList");
+            region_select.options.length=0;
+
+            for(var i=0;i<selected_region.length;i++)
+            {
+                var region_ele=document.createElement("option");
+                var region_list=document.createTextNode(selected_region[i]);
+                region_ele.appendChild(region_list);
+                region_select.appendChild(region_ele);
+            }
+        }
+    </script>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <select id="leftList" onchange="onChange()">
+                <option>--請選擇--</option>
+                <option value="0">基隆市</option>
+                <option value="1">台北市</option>
+                <option value="2">桃園市</option>
+            </select>
+        </td>
+        <td>
+            <select id="rightList">
+
+            </select>
+        </td>
+        <td>
+            <span id="sp"></span>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
