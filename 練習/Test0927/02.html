@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+        div {
+            border-radius: 10px;
+            background-color: cornflowerblue;
+            width: 300px;
+            height: 400px;
+            border: 1px solid;
+            margin: auto;
+            padding-top: 20px;
+            padding-left: 25px;
+        }
+
+        input[type=text] {
+            background-color: #0f0f0f;
+            font-size: 20px;
+            font-family: "alarm clock";
+            font-weight: bold;
+            color: lightgreen;
+            width: 90%;
+            height: 50px;
+        }
+
+        input[type=button] {
+            background-color: #002752;
+            width: 60px;
+            height: 60px;
+            color: white;
+            margin-top: 5px;
+            margin-left: 5px;
+
+            font-size: 30px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        //樹入計數
+        var cnt = 0;
+
+        function show(val) {
+            var screen = document.getElementById("textFrame");
+            // screen.readonly="readonly";
+            //唯讀屬性
+            screen.setAttribute("readonly", "readonly");
+
+            var num = val.value;
+            switch (num) {
+                case "c":
+                    screen.value = 0;
+                    break;
+                case "=":
+                    screen.value=eval(screen.value);
+                    break;
+                default:
+                    if (cnt === 0)
+                        screen.value = val.value;
+                    else
+                        screen.value = screen.value + num;
+                    cnt++;
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+<div>
+    <input type="text" id="textFrame" value="0"><br/>
+    <input type="button" onclick="show(this)" value="1">
+    <input type="button" onclick="show(this)" value="2">
+    <input type="button" onclick="show(this)" value="3">
+    <input type="button" onclick="show(this)" value="+"><br/>
+    <input type="button" onclick="show(this)" value="4">
+    <input type="button" onclick="show(this)" value="5">
+    <input type="button" onclick="show(this)" value="6">
+    <input type="button" onclick="show(this)" value="-"><br/>
+    <input type="button" onclick="show(this)" value="7">
+    <input type="button" onclick="show(this)" value="8">
+    <input type="button" onclick="show(this)" value="9">
+    <input type="button" onclick="show(this)" value="*"><br/>
+    <input type="button" onclick="show(this)" value="0">
+    <input type="button" onclick="show(this)" value=".">
+    <input type="button" onclick="show(this)" value="c">
+    <input type="button" onclick="show(this)" value="/"><br/>
+    <input type="button" onclick="show(this)" value="=">
+</div>
+</bodyi>
+</html>

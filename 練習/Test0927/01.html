@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script !type="text/javascript">
+        function abc() {
+            // document.write(bdy);
+            // document.write("<br/>");
+            var x = [2];
+            x.push(3);
+            x.push(3);
+            x.push(3);
+            x.push(3);
+            x.length=20;
+            // for(var i=0;i<x.length;i++) {
+            var DIV=document.getElementById("div1");
+            DIV.style.width="10%";
+            DIV.style.backgroundColor = "red";
+            DIV.style.padding="10px";
+            DIV.style.margin="auto";
+            // DIV.setAttribute("style", "border:1px solid red;background-color:grey; color:white");
+            DIV.innerHTML="test1";
+            x[2]="abc";
+            for(var i in x)
+            {
+                // document.write("<font color='red'>"+x[i]+"</font><br/>");
+                console.log(x[i]);
+                // alert(x);
+            }
+        };
+    </script>
+</head>
+<body onload="abc()">
+    <div id="div1">1</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        var a=[1,2,"abc","def"];
+        var b=["aaa","bbb"];
+        var c=[3.3,5.5];
+        var arr=a.concat(b,c,c);
+        document.write("長度="+arr.length+"<br/>");
+        document.write(arr+"<br/>");
+
+        arr=arr.slice(0,6)
+        document.write(arr+"<br/>");
+
+        arr=arr.join("<br/>");
+        document.write(arr+"<br/>");
+
+        arr=arr.pop();
+        document.write(arr+"<br/>");
+
+    </script>
+</head>
+<body onload="demo()">
+
+</body>
+</html>
