@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head lang="zh-tw">
+	<meta charset="UTF-8">
+	<script type="text/javascript">
+		function fm(name,age){
+		    this.name=name;
+		    this.age=age;
+        }
+
+		    fm.prototype.log=function(){
+		        console.log("name="+this.name+", age="+this.age);
+		        return "hello";
+		}
+var cnt=1
+		function FindMethos(func){
+		    // if(func.__proto__!=null)
+			if(func.hasOwnProperty("name"))
+		    {
+                console.log("#"+cnt++);
+                console.log(func.__proto__);
+                FindMethos(func.__proto__);
+		    }
+		}
+
+		let p1=new fm("tai",23);
+        // let p2=new fm("jack",33);
+        // p1.log();
+        // p2.log();
+        // console.log(p1.log)
+        // console.log(p1.log())
+		// console.log(p1.__proto__);
+		var t=new FindMethos(Object);
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

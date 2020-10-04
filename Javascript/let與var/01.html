@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function test() {
+            for (var i = 0; i < 3; i++) {
+// callback issue
+//                     setTimeout(function () {
+//                         console.log(i)
+//                     }, 5000);
+
+// resolved method I
+                (function (j) {
+                    setTimeout(function () {
+                        console.log(j)
+                    }, 5000)
+                }(i))
+            }
+
+// resolved method II
+            for (let i = 0; i < 3; i++) {
+                    setTimeout(function () {
+                        console.log(i)
+                    }, 5000);
+                }
+        }
+    </script>
+</head>
+<body onload="test()">
+
+</body>
+</html>
