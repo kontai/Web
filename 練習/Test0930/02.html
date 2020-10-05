@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        let cnt=0;
+        let start_time;
+        let stop_time;
+        let during;
+        function demo1(){
+            let x=document.getElementById("div01");
+            x.style.backgroundColor="yellow";
+            x.style.color="blue";
+            x.innerHTML=during;
+            let add1=document.createElement("table");
+            add1.appendChild("td");
+
+            // setTimeout(function(){x.style='';},5000);
+            x.onmouseover=function (){
+                x.style.backgroundColor="red";
+                x.style.textAlign="right";
+                x.innerText=during;
+                start_time=new Date().getTime();
+            };
+            x.onmouseout=function (){
+                x.style.textAlign="left";
+                cnt++;
+                console.log(cnt);
+                 during="停留了"+(new Date().getTime()-start_time)/1000+"sec";
+                x.innerText="";
+                console.log(during);
+            };
+            // document.write(x.getAttribute("style"));
+        }
+    </script>
+</head>
+<body>
+
+<div style="font-size:5em;border:2px solid blue" id="div01">abc</div>
+<ul style="list-style:none;">
+    <li style="">
+        <input type="button" value="change style 1" onclick="demo1()" />
+    </li>
+    <hr/>
+    <li>
+        <input type="button" value="change style 2" onclick="demo2()"/>
+    </li>
+
+</ul>
+</body>
+</html>

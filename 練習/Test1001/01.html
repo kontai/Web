@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang = "zh-tw">
+<head>
+	<meta charset = "UTF-8">
+	<script type = "text/javascript">
+        function addNew() {
+            let x = document.getElementById("treeDiv01");
+            x.innerHTML = x.innerHTML + "<div><input type = 'file'><input type='button' value='add' onclick='addNew()'><input type='button' value='delete' onclick='deleteDiv(this)'> </div>";
+        }
+
+        function deleteDiv(btn){
+            let y=document.getElementById("treeDiv01");
+            let chiDiv=btn.parentNode;
+            y.removeChild(chiDiv);
+        }
+
+
+	</script>
+</head>
+<body>
+<h1>測試新增/刪除div</h1>
+<hr />
+<input type = "file" name = "" id = "">
+<input type = "button" value = "add" onclick = "addNew()" />
+<div id = "treeDiv01">
+</div>
+</body>
+</html>

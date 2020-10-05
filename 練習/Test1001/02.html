@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head >
+	<meta charset="UTF-8">
+	<title>測試新增div</title>
+	<script type = "text/javascript">
+        function addNew() {
+            let x = document.getElementById("div01");
+            let ab=document.getElementById("addB");
+
+            let fileBtn=document.createElement("input");
+            fileBtn.type="file";
+            fileBtn.name="addFile";
+
+            let addBtn = document.createElement("input");
+            addBtn.type="button";
+            addBtn.value = "add";
+            addBtn.onclick = ab.onclick;
+
+            let delBtn=document.createElement("input");
+            delBtn.type="button";
+            delBtn.value="delete";
+            delBtn.onclick=function(){
+                x.removeChild(fileBtn);
+                x.removeChild(addBtn);
+                x.removeChild(delBtn);
+                x.removeChild(br);
+                cnt();
+            }
+            let br=document.createElement("br");
+            x.appendChild(fileBtn);
+            x.appendChild(addBtn);
+            x.appendChild(delBtn);
+            x.appendChild(br);
+            cnt();
+        }
+
+        function cnt(){
+            // let x=document.getElementById("div01");
+            let show=document.getElementById("cnt");
+            show.innerHTML=document.getElementsByName("addFile").length;
+        }
+
+	</script>
+
+</head>
+<body>
+<!--<input type = "file" name = "" id = "">-->
+<input type = "button" value = "上傳檔案"  onclick = "addNew()" id="addB" style="width:400px;background-image: url('../../Image/image/4a51167a-89d5-4710-aca2-7c76edc355b8-thumbnail.jpg')">
+<span>已選擇:</span><span id="cnt"></span>檔案
+<div id = "div01"></div>
+</body>
+</html>

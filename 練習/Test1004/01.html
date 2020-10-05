@@ -1,0 +1,205 @@
+<!doctype html>
+<!doctype html>
+<html lang = "zh">
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport"
+	      content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+	<title>Document</title>
+	<link rel = "stylesheet" href = "mystyle.css">
+	<script type = "text/javascript">
+        function ChangeQty(btn) {
+            let x = btn.parentNode.parentNode;
+
+            //獲取單元格
+            let qty = x.cells[3];
+            if (!isNaN(qty.innerHTML)) {
+                qty.innerHTML = "<input type='text' value='" + qty.innerHTML + "' onblur='confirmChange(this)'>";
+            }
+        }
+
+        function confirmChange(btn) {
+            let x = btn.parentNode;
+            let row = x.parentNode;
+
+            //判斷是否為數字
+            if (!isNaN(btn.value)) {
+                console.log(row.cells[2].innerHTML);
+                row.cells[4].innerHTML = btn.value * row.cells[2].innerHTML;
+                x.innerHTML = btn.value;
+                cal();
+            }
+        }
+
+        function cal() {
+            let tb = document.getElementById("tb");
+            let total = document.getElementById("total");
+            // for(let i=1;i<tb.rows.length;i++){
+            //     // total.innerHTML=tb.rows[i].cells[4].value+total.innerHTML;
+            // 	console.log(tb.rows[i].cells[4]);
+            // }
+        }
+
+        function delByButton(btn) {
+            let tb = document.getElementById("tb");
+            let row = btn.parentNode.parentNode;
+            tb.deleteRow(row.rowIndex);
+
+        }
+
+        let stat=0;
+
+        function chkAdd() {
+            console.log("chkAdd()被調用")
+            let tb = document.getElementById("tb");
+            // let newBook=document.getElementById("newBook");
+            let newbooks = document.getElementsByName("newbook");
+            let len = newbooks.length;
+            let arr = [];
+            for (let i = 0; i < len; i++) {
+                //解凍input輸入框
+                let tmp = newbooks[i].value;
+                if (tmp != "") {
+                    if (i == 0 && tmp != undefined) {
+                        arr.push(newbooks[i].value);
+                    } else if (i >= 1 && (!isNaN(tmp))) {
+                        arr.push(newbooks[i].value);
+                    }
+                } else {
+                    return -1;
+                }
+            }
+            if (arr) {
+                let cell_len = tb.rows[0].cells.length;
+                let new_row = tb.insertRow(1);
+                for (let i = 0; i < cell_len; i++) {
+                    new_row.insertCell(i);
+                }
+                tb.rows[1].cells[0].innerHTML = "<input type='checkbox' name='chk'>";
+                tb.rows[1].cells[1].innerHTML = arr[0];
+                tb.rows[1].cells[2].innerHTML = arr[1];
+                tb.rows[1].cells[3].innerHTML = arr[2];
+                tb.rows[1].cells[4].innerHTML = arr[1] * arr[2];
+                tb.rows[1].cells[5].innerHTML = "<input type = 'button' value = 'change' onclick = 'ChangeQty(this)'><input type = 'button' value = 'del' onclick = 'delByButton(this)'> ";
+            }
+            stat=0;
+        }
+
+        function editBook() {
+            if(stat!=0)
+                return;
+            //新稱確認按鈕
+            let x = document.getElementById("newBook");
+            let ok_btn = document.createElement("input");
+            ok_btn.type = "button";
+            ok_btn.value = "確認添加";
+            ok_btn.hidden = false;
+            ok_btn.id = "ok_btn";
+            ok_btn.style = "width:15%; background-color:yellow;";
+            // ok_btn.onclick ="chkAdd()";
+            ok_btn.setAttribute("onclick", "chkAdd()");
+            ok_btn.setAttribute("onmouseup", "disbtn()");
+            x.appendChild(ok_btn);
+
+            stat=1;
+
+            let newbooks = document.getElementsByName("newbook");
+            console.log(newbooks.length + "," + newbooks + "," + newbooks[0].disabled)
+            let len = newbooks.length;
+            for (let i = 0; i < len; i++) {
+                //解凍input輸入框
+                newbooks[i].disabled = false;
+            }
+        }
+
+        function disbtn() {
+            let newbooks = document.getElementsByName("newbook");
+
+            let len = newbooks.length;
+            for (let i = 0; i < len; i++) {
+                //凍結input輸入框
+                newbooks[i].disabled = true;
+            }
+            let x=document.getElementById("newBook");
+            let ok_btn=document.getElementById("ok_btn");
+            let pa=ok_btn.parentNode;
+            // pa.removeChild(ok_btn);
+            stat=0;
+        }
+
+        function chkDel() {
+            let tb = document.getElementById("tb");
+            let chk = document.getElementsByName("chk");
+            let len = chk.length;
+            for (let i = 0; i < len; i++) {
+                // console.log(chk[i].checked);
+                if (chk[i].checked) {
+                    tb.deleteRow(i + 1);
+                    i--;
+                }
+            }
+        }
+	</script>
+</head>
+<body>
+<h2>表格增加/刪除f操作練習</h2>
+<hr>
+<div>
+	<input type = "button" value = "新增" style = "background-color: darkblue;color:white;width:10%"
+	       onclick = "editBook()">
+	<input type = "button" value = "刪除" style = "background-color: darkblue;color:white;width:10%" onclick = "chkDel()">
+	<div id = "newBook">
+		<input type = "text" style = "width:30%" name = "newbook" placeholder = "請輸入書名" disabled = "disable">
+		<input type = "text" style = "width:20%" name = "newbook" placeholder = "單價" disabled = "disable">
+		<input type = "text" style = "width:20%" name = "newbook" placeholder = "數量" disabled = "disable">
+	</div>
+</div>
+<table id = "tb">
+	<tr>
+		<th>
+			<input type = "checkbox" name = "" id = "">
+		</th>
+		<th style = "width:100px">書名</th>
+		<th style = "width:100px">價格</th>
+		<th style = "width:100px">數量</th>
+		<th style = "width:100px">總價</th>
+		<th>操作</th>
+	</tr>
+	<tr>
+		<td><input type = "checkbox" name = "chk" id = ""></td>
+		<td>java</td>
+		<td>350</td>
+		<td>0</td>
+		<td>0</td>
+		<td>
+			<input type = "button" value = "change" onclick = "ChangeQty(this)">
+			<input type = "button" value = "del" onclick = "delByButton(this)">
+		</td>
+	</tr>
+	<tr>
+		<td><input type = "checkbox" name = "chk" id = ""></td>
+		<td>C++</td>
+		<td>500</td>
+		<td>0</td>
+		<td>0</td>
+		<td>
+			<input type = "button" value = "change" onclick = "ChangeQty(this)">
+			<input type = "button" value = "del" onclick = "delByButton(this)">
+		</td>
+	</tr>
+	<tr>
+		<td><input type = "checkbox" name = "chk" id = ""></td>
+		<td>Python</td>
+		<td>200</td>
+		<td>0</td>
+		<td>0</td>
+		<td>
+			<input type = "button" value = "change" onclick = "ChangeQty(this)">
+			<input type = "button" value = "del" onclick = "delByButton(this)">
+		</td>
+	</tr>
+	<!--	<div style = "text-align: right;font-size:20px">總共:<span style = "color:red" id = "total">0</span>元</div>-->
+</table>
+</body>
+</html>

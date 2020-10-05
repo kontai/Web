@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href = "mystyle.css">
+	<script type = "text/javascript">
+        let addList = [
+            ["南崁", "大園", "觀音", "蘆竹"],
+            ["內湖", "大安", "南港", "士林"],
+            ["中正", "七堵", "仁愛", "中山"]
+        ];
+
+        function selAddress() {
+            let address = document.getElementById("address").value;
+            let len = addList[address].length;
+            let newAddress = document.getElementById("newAddress");
+            newAddress.length = 0;
+            for (let i = 0; i < len; i++) {
+                let newOptions = document.createElement("option");
+                newOptions.value = i;
+                newOptions.innerHTML = addList[address][i];
+                newAddress.appendChild(newOptions);
+            }
+        }
+
+
+	</script>
+</head>
+<body>
+<ul>
+	<li><h2 style = "margin:auto;">選單</h2></li>
+	<hr />
+	<li>
+		住址:
+		<select name = "address" id = "address" onchange = "selAddress()">
+			<option value = "-1">請選擇-----</option>
+			<option value = "0">桃園</option>
+			<option value = "1">台北</option>
+			<option value = "2">基隆</option>
+		</select>
+		<select name = "newaddress" id = "newAddress" ></select>
+	</li>
+</ul>
+</body>
+</html>

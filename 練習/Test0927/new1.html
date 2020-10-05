@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function new1() {
+            opener.testFa();
+        }
+        function tp() {
+            var tb = document.getElementById("sp");
+            setInterval(function(){
+                tb.innerHTML =tb.innerHTML-1;
+                if(tb.innerHTML == 0)
+                    close();
+            },1000);
+        }
+    </script>
+</head>
+<body onload="tp()">
+<div>倒數<span style="color:red;font-size: 30px" id="sp">5</span>秒後,此視窗將關閉.</div>
+<input type="button" value="call parent function" onclick="new1()">
+</body>
+</html>

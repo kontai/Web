@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<script type="text/javascript">
+		function addNew(){
+		    let x = document.getElementById("div01");
+		    let ad=document.getElementById("ad");
+
+		    let fbtn=document.createElement("input");
+		    fbtn.type="file";
+
+		    let addbtn=document.createElement("input");
+		    addbtn.type="button";
+		    addbtn.value="add";
+		    addbtn.onclick=ad.onclick;
+
+		    let  delbtn=document.createElement("input");
+		    delbtn.type="button";
+		    delbtn.value="delete";
+		    delbtn.onclick=function(){
+		        x.removeChild(fbtn);
+                x.removeChild(addbtn);
+                x.removeChild(delbtn);
+                x.removeChild(br);
+		    }
+
+		    let br=document.createElement("br");
+
+		    x.appendChild(fbtn);
+		    x.appendChild(addbtn);
+		    x.appendChild(delbtn);
+		    x.appendChild(br);
+
+		}
+	</script>
+</head>
+<body>
+<input type = "file" value = "select">
+<input type = "button" value = "add" onclick="addNew()" id="ad">
+<div id="div01"></div>
+</body>
+</html>

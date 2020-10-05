@@ -1,40 +1,35 @@
 <!doctype html>
 <html>
-<head lang="zh-tw">
-	<meta charset="UTF-8">
-	<script type="text/javascript">
-		function fm(name,age){
-		    this.name=name;
-		    this.age=age;
-        }
+<head lang = "zh-tw">
+	<title>表單測試(一)</title>
+	<meta charset = "UTF-8">
+	<link rel = "stylesheet" href = "style.css">
+	<script type = "text/javascript">
+            function  testForm(){
+                let fid=document.getElementById("fm");
+                let fname=document.frm;
+                // console.log(fid===fname);
+	            console.log(fid.elements);
+                console.log(fid.elements.length);
 
-		    fm.prototype.log=function(){
-		        console.log("name="+this.name+", age="+this.age);
-		        return "hello";
-		}
-var cnt=1
-		function FindMethos(func){
-		    // if(func.__proto__!=null)
-			if(func.hasOwnProperty("name"))
-		    {
-                console.log("#"+cnt++);
-                console.log(func.__proto__);
-                FindMethos(func.__proto__);
-		    }
-		}
-
-		let p1=new fm("tai",23);
-        // let p2=new fm("jack",33);
-        // p1.log();
-        // p2.log();
-        // console.log(p1.log)
-        // console.log(p1.log())
-		// console.log(p1.__proto__);
-		var t=new FindMethos(Object);
+                for(i in fid.elements){
+                    console.log(i);
+                }
+                fid.reset();
+                fid.submit();
+                fid.action="https://www.google.com"
+            }
 	</script>
 </head>
-
 <body>
+<input type = "button" value = "test from" onclick = "testForm()">
+<hr />
+<form action = "#" method = "get" name = "frm" id = "fm">
+	使用者名稱 <input type = "text" name = "uname" id = "uname" value="???" readonly="readonly"><br>
+	密碼 <input type = "password" name = "pwd" id = "pwd" disabled="disabled" value="guess?"><br>
+	<input type = "reset" value = "清除"><input type = "submit" value = "提交">
 
+
+</form>
 </body>
 </html>

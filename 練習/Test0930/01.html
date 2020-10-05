@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function reload_page() {
+        window.document.location.reload();
+    }
+
+    function testUpdate2() {
+            let x = document.getElementById("div1");
+            // div2.innerText="<strong style='color:red;font-size: 20em'>Div2</strong>";
+
+    }
+
+    function testUpdate() {
+            let x = document.getElementById("div2");
+            div2.innerHTML="<strong style='color:red;font-size: 20em'>Div2</strong>";
+            div1.innerHTML="<div style='border:1px solid;border-radius: 4px;background-color: #0c5460;color: white'>"+div1.innerHTML+"</div>";
+        }
+
+        function testIH() {
+            let x = document.getElementById("div1");
+            alert(x.innerHTML);
+        }
+
+        function testIT() {
+            let x = document.getElementById("div1");
+            alert(x.innerText);
+        }
+
+    </script>
+</head>
+
+<body>
+<input type="button" onclick="testIH()" value="innerHTML Test">
+<input type="button" onclick="testIT()" value="innerText Test">
+<input type="button" onclick="testUpdate()" value="update use innerHTML test">
+<input type="button" onclick="testUpdate2()" value="update use innerText test">
+<input type="button" onclick="reload_page()" value="reload">
+<div id="div1">This is Div1
+    <div id="div2">This is Div2</div>
+</div>
+</body>
+</html>

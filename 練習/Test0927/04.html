@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        function User(uname, uage) {
+            this.uname = uname;
+            this.uage = uage;
+        }
+
+        Person.prototype=new User();
+        var p1 = new Person("kontai", 19);
+        var p2 = new Person("john", 20);
+
+        var u1 = new User("james", 21);
+        var u2 = new User("chris", 22);
+        Person.prototype.test=function(){document.write("Person prototype");}
+        User.prototype.test=function(){document.write("User prototype");}
+        document.write("<br/>");
+        u1.test();
+        document.write("<br/>");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

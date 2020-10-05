@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function parent() {
+        var name = 'Harry';
+        function child() {
+
+            var fullname = name + ' ' + 'Potter';
+            document.write(fullname);
+
+            //var 的提升
+            // (在child函數開頭先創建 var name,導致此作用域name=undefined,直到此行被賦值)
+            var name="kontai";
+        }
+        return child
+    }
+    var child = parent();
+    child();// Harry Potter
+</script>
+
+</body>
+</html>

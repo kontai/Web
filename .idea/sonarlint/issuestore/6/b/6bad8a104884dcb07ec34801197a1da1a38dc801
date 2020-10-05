@@ -1,0 +1,79 @@
+
+Pjavascript:S1854ñ."3Remove this useless assignment to variable "first".(•²ßÖ
+bjavascript:S2137"ADo not use "undefined" to declare a parameter - use another name.(Ÿ©Ë©øÿÿÿÿ
+Sjavascript:S1854á"1Remove this useless assignment to variable "div".(˜÷µ”ùÿÿÿÿ
+Qjavascript:S1117±"/'rtrim' is already declared in the upper scope.( äŸôùÿÿÿÿ
+Tjavascript:S1481ú'"2Remove the declaration of the unused 'j' variable.(‡×‹½şÿÿÿÿ
+Hjavascript:S1117ô."+'i' is already declared in the upper scope.(ó©ë
+Pjavascript:S1117a"4'rootjQuery' is already declared in the upper scope.(ŒÜ€£
+Jjavascript:S1117£8"-'val' is already declared in the upper scope.(Ë§íš
+Hjavascript:S1117£8"+'i' is already declared in the upper scope.(Ë§íš
+Hjavascript:S1117ë@"+'_' is already declared in the upper scope.(ğ¡Åµ
+Mjavascript:S1117ÂC"0'length' is already declared in the upper scope.(¥ø‹‘
+Mjavascript:S1117äC"0'length' is already declared in the upper scope.(Ñ™éŒ
+Kjavascript:S1117ÌI".'type' is already declared in the upper scope.(×¾ü
+Ujavascript:S1117Õ"3'undefined' is already declared in the upper scope.(Ÿ©Ë©øÿÿÿÿ
+Hjavascript:S1117Î."+'i' is already declared in the upper scope.(¦°Â«
+Ujavascript:S1854á"3Remove this useless assignment to variable "input".(˜÷µ”ùÿÿÿÿ
+Ljavascript:S1117’"/'value' is already declared in the upper scope.(ÿÜÛİ
+Tjavascript:S1117è"2'document' is already declared in the upper scope.(âüõàüÿÿÿÿ
+Tjavascript:S1854å1"2Remove this useless assignment to variable "elem".(«ÂÑ¬ÿÿÿÿÿ
+Rjavascript:S1117§I"0'method' is already declared in the upper scope.(Æ¸áÌûÿÿÿÿ
+Kjavascript:S1117³".'data' is already declared in the upper scope.(º—ê±
+Qjavascript:S1481‘1"4Remove the declaration of the unused 'len' variable.(½ÇÀÛ
+Hjavascript:S1117´	"+'i' is already declared in the upper scope.(Ë½ĞÌ
+Rjavascript:S1117Õ"0'window' is already declared in the upper scope.(Ÿ©Ë©øÿÿÿÿ
+Njavascript:S1854Ş"1Remove this useless assignment to variable "div".(„”È¦
+Vjavascript:S1854Š1"9Remove this useless assignment to variable "srcElements".(¯ùşå
+Ojavascript:S1854º"2Remove this useless assignment to variable "rnot".(Ì¶ú‘
+Kjavascript:S1117÷1".'elem' is already declared in the upper scope.(ıÊÿÑ
+2javascript:S108Ï"Empty block statement.(Ô‰íÌ
+Mjavascript:S1854Ü"1Remove this useless assignment to variable "tds".(ÇÎH
+Qjavascript:S1117ñ3"/'value' is already declared in the upper scope.(Î‰Ç§ıÿÿÿÿ
+Kjavascript:S1117ÁC"/'index' is already declared in the upper scope.(›ãöq
+Tjavascript:S1854å1"2Remove this useless assignment to variable "safe".(«ÂÑ¬ÿÿÿÿÿ
+ajavascript:S905"FExpected an assignment or function call and instead saw an expression.(ö„ã!
+gjavascript:S905¡"FExpected an assignment or function call and instead saw an expression.(¦ó³§şÿÿÿÿ
+Ojavascript:S1117§I"-'val' is already declared in the upper scope.(Æ¸áÌûÿÿÿÿ
+Ujavascript:S1481b"4Remove the declaration of the unused 'ret' variable.(Å¢–Ÿûÿÿÿÿ
+Njavascript:S1854Ş"1Remove this useless assignment to variable "div".(„”È¦
+Tjavascript:S1854Ö"2Remove this useless assignment to variable "name".(ÅàÉ¿ıÿÿÿÿ
+Vjavascript:S1117¸"4'rquickExpr' is already declared in the upper scope.(ßçÙşùÿÿÿÿ
+Ljavascript:S1117ÌI"/'value' is already declared in the upper scope.(×¾ü
+Ijavascript:S1264£?",Replace this "for" loop with a "while" loop.(³ê
+Qjavascript:S1854á"/Remove this useless assignment to variable "a".(˜÷µ”ùÿÿÿÿ
+Rjavascript:S1481º"5Remove the declaration of the unused 'rnot' variable.(Ì¶ú‘
+Vjavascript:S1854á"4Remove this useless assignment to variable "select".(˜÷µ”ùÿÿÿÿ
+Ijavascript:S1264â",Replace this "for" loop with a "while" loop.(…¯Ë­
+Sjavascript:S1854Ü"7Remove this useless assignment to variable "marginDiv".(ÇÎH
+Xjavascript:S1854á"6Remove this useless assignment to variable "fragment".(˜÷µ”ùÿÿÿÿ
+Sjavascript:S1854Š"6Remove this useless assignment to variable "selector".(—‡åÈ
+Ojavascript:S1117¨"-'key' is already declared in the upper scope.(›Í·Ûúÿÿÿÿ
+Qjavascript:S1117ç"/'value' is already declared in the upper scope.(Şâ¼ÿÿÿÿÿ
+Zjavascript:S1481®"8Remove the declaration of the unused 'related' variable.(ÁÏÌıÿÿÿÿ
+Sjavascript:S1854á"1Remove this useless assignment to variable "all".(˜÷µ”ùÿÿÿÿ
+gjavascript:S905á""FExpected an assignment or function call and instead saw an expression.(öÇ…Õøÿÿÿÿ
+Qjavascript:S1854ú'"/Remove this useless assignment to variable "j".(‡×‹½şÿÿÿÿ
+Ijavascript:S1264Ò",Replace this "for" loop with a "while" loop.(…¯Ë­
+Mjavascript:S1854Ü"1Remove this useless assignment to variable "div".(ÇÎH
+cjavascript:S2137Õ"ADo not use "undefined" to declare a parameter - use another name.(Ÿ©Ë©øÿÿÿÿ
+Qjavascript:S1117¨"/'value' is already declared in the upper scope.(›Í·Ûúÿÿÿÿ
+Qjavascript:S1117È,"/'value' is already declared in the upper scope.(Şâ¼ÿÿÿÿÿ
+Wjavascript:S1854Š1":Remove this useless assignment to variable "destElements".(¯ùşå
+Ojavascript:S1117ˆ"-'div' is already declared in the upper scope.(ÇÂèˆıÿÿÿÿ
+Jjavascript:S1117áC"/'index' is already declared in the upper scope.(ã¿
+Qjavascript:S1117ì-"/'value' is already declared in the upper scope.(Şâ¼ÿÿÿÿÿ
+Sjavascript:S1854å1"1Remove this useless assignment to variable "div".(«ÂÑ¬ÿÿÿÿÿ
+_javascript:S1481µC"=Remove the declaration of the unused 'tweenerIndex' variable.(ê¸İûÿÿÿÿ
+\javascript:S1854¼":Remove this useless assignment to variable "rendsWithNot".(àï‘şÿÿÿÿ
+Tjavascript:S1117‘,"2'document' is already declared in the upper scope.(öÉÁ…ÿÿÿÿÿ
+Sjavascript:S1854ñ."6Remove this useless assignment to variable "fragment".(•²ßÖ
+Sjavascript:S1854á"1Remove this useless assignment to variable "opt".(˜÷µ”ùÿÿÿÿ
+Vjavascript:S1481Š"9Remove the declaration of the unused 'selector' variable.(—‡åÈ
+Kjavascript:S1117½E".'prop' is already declared in the upper scope.(ß¾¬Ó
+Tjavascript:S1854¿"2Remove this useless assignment to variable "elem".(ë’´Ôıÿÿÿÿ
+Sjavascript:S1854Ü"7Remove this useless assignment to variable "container".(ÇÎH
+Pjavascript:S1117ñ3".'name' is already declared in the upper scope.(Î‰Ç§ıÿÿÿÿ
+ljavascript:S3403âF"JRemove this "!==" check; it will always be true. Did you mean to use "!="?(’ü¯İùÿÿÿÿ
+bjavascript:S905œ"FExpected an assignment or function call and instead saw an expression.(ëÖ©
+_javascript:S1481¼"=Remove the declaration of the unused 'rendsWithNot' variable.(àï‘şÿÿÿÿ
