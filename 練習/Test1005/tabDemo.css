@@ -1,0 +1,24 @@
+table {
+    margin: auto;
+    width: 60%;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 5px;
+
+}
+
+tr {
+    text-align: center;
+    border-spacing: 0px;
+}
+
+td {
+    border: 3px solid;
+
+}
+
+input[type="number"] {
+    font-size: 50%;
+    text-align: right;
+    
+}

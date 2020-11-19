@@ -1,0 +1,43 @@
+body {
+    background-color: darkolivegreen;
+}
+
+div {
+    width: 300px;
+    margin: auto;
+    font-size: 2em;
+    color: white;
+}
+
+table {
+    border: 1px solid white;
+    border-spacing: 0px;
+    margin: auto;
+    width: 60%;
+    height: 100px;
+    box-shadow: -2px 5px 5px #6c757d;
+    /*border-image: 4px,4px, grey;*/
+    /*background-image: radial-gradient(darkolivegreen 50%,transparent,darkred);*/
+}
+
+td:hover {
+    border: 1px solid cyan;
+}
+
+th {
+    border: 1px solid white;
+    text-align: center;
+    font-size: 30px;
+}
+
+td {
+    border: 1px solid white;
+    text-align: center;
+    font-size: 25px;
+}
+
+input[type="button"] {
+    font-size: 20px;
+    width: 48%;
+    height: 100%;
+}

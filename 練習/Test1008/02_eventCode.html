@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset = "utr-8">
+	<script type = "text/javascript">
+        function eventDemo() {
+            let mtext = document.getElementById("mtext");
+            mtext.value='';
+            mtext.focus();
+
+        }
+
+        function  cl(){
+            let mtext = document.getElementById("mtext");
+            mtext.value='';
+        }
+        function tr(){
+            let mtext = document.getElementById("mtext");
+            let trans = document.getElementById("kc");
+            mtext.addEventListener('keypress', event => {
+                trans.value=event.keyCode;
+            });
+        }
+
+	</script>
+</head>
+<body>
+<div>
+	<!--		<input type = "text" name = "" id = "mtext" onkeypress="if(event.keyCode==13) alert('enter被按下');">-->
+	<input type = "text" name = "" id = "mtext" onkeyup="tr()" onkeypress="cl()">
+	<input type = "button" value = "" onclick = "eventDemo()">
+</div>
+<div>
+	<input type = "text" name = "" id = "kc">
+</div>
+</body>
+</html>

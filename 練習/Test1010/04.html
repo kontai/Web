@@ -1,0 +1,75 @@
+<!doctype html>
+<!--suppress ALL -->
+<html>
+	<head lang = "zh">
+		<meta charset = "UTF-8">
+		<title></title>
+		<style>
+            body {
+                background: rgb(200, 100, 100);
+            }
+
+            input[type="text"] {
+                margin-right: 20px;
+            }
+
+            h2 {
+                /*display:inline-flex;*/
+                /*width:20px;*/
+                border-bottom: 3px solid darkolivegreen;
+                margin-bottom: 20px;
+                text-align: center;
+                color: white;
+
+            }
+		</style>
+		<script src = "../../js庫/jquery-3.5.1.js" type = "text/javascript"></script>
+		<script>
+            //後代選擇器
+            function basicFilter() {
+                let x = $("#divTop input");
+                console.log(x.length);
+            }
+
+            function nextFilter() {
+                let x = $("#tg + input");
+                console.log(x.length);
+                console.log(x.val());
+            }
+
+            function tailFilter() {
+                let x = $("#tg ~ input");
+                console.log(x.length);
+                console.log(x.val());
+                console.log(x[1].value);
+            }
+
+		</script>
+	</head>
+	<body>
+		<h2>選擇器II</h2>
+		<br>
+
+		<input type = "button" value = "後代選擇器" onclick = "basicFilter()">
+		<input type = "button" value = "下選擇器" onclick = "nextFilter()">
+		<input type = "button" value = "後面選擇器" onclick = "tailFilter()">
+		<hr>
+		<div id = "divTop">
+			<input type = "text" name = "" id = "">
+			<input type = "text" name = "" id = "">
+			<input type = "text" name = "" id = "" value = "up">
+			<input type = "text" name = "" id = "tg" value = "v">
+			<input type = "text" name = "" id = "" value = "down">
+			<input type = "text" name = "" id = "" value = "end">
+		</div>
+		<br>
+		<div id = "divTop2">
+			<input type = "text" name = "" id = "">
+			<input type = "text" name = "" id = "">
+			<input type = "text" name = "" id = "">
+			<input type = "text" name = "" id = "">
+			<input type = "text" name = "" id = "">
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="../../js庫/jquery-3.5.1.js"></script>
+    <style>
+        div {
+            width: 300px;
+ //           background-color: red;
+        }
+    </style>
+    <script>
+        function chcolor(){
+        var tb=document.getElementById("tb");
+        var sp=document.getElementById('id1');
+        sp.style.backgroundColor='red';
+        }
+
+        function addRow(){
+            var tb=document.getElementById('tb');
+
+            console.log(tb.rows[0]);
+        }
+
+        function link(){
+            alert('link??');
+            return true; 
+        }
+
+        function newWindow(){
+					window.open('son.html','newwindow','height=400, width=600, top=100px,left=320px, toolbar=yes, menubar=yes,scrollbars=yes, resizable=yes,location=no, status=yes');
+        }
+var i=0;
+        function addBtb(){
+            if(i==0)
+            {
+            var nb=document.createElement('input');
+            var sp=document.getElementById('sp');
+            nb.type='button';
+            nb.value='new button';
+            sp.appendChild(nb);
+            i++;
+            }
+        }
+
+        function getMouseLoc(){
+            var tx=document.getElementById('tb2');
+            var loc=event||window.event;
+            var x=loc.clientX;
+            var y=loc.clientY;
+            
+            tx.value=event.clientX+','+event.clientY;
+            if(x==100 && y==100)
+            {
+                alert("bingo!");
+            }
+        }
+
+        function getKey(){
+            var show=document.getElementById('kb');
+//            show.value=window.event.keyCode;
+show.value=event.keyword(65);
+        }
+        $(function () {
+            //alert('test');
+        })
+    </script>
+</head>
+
+<body onmousemove="getMouseLoc()" onkeydown="getKey()">
+    <table id='tb' border="1" cellpadding=12 cellspacing=0px align="center" style="border:1px solid black;width:400px;text-align:center">
+        <tr>
+            <th><label for="id1"><span  id='id1' onclick='chcolor()'>ID</span></label></th>
+            <th>Item</th>
+            <th>Qty.</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><span id='sp'></span></td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <div style="text-align:center;padding:10px;border:1px solid cyan;" >
+    <br>
+    <a href="https://www.google.com" onclick="return link()" style="display: inline;">aaaa</a>
+    <br>
+    <input type="text" name="" id="text01" onchange="new function(){console.log('text changed')}">
+    <br>
+    <input type="button" value="new window" onclick="newWindow()">
+    <br>
+    <input type="button" value="add button" id='btn' onclick='addBtb()'>
+    <!-- <input type="button" onclick='addRow()'> -->
+<br>
+    座標<input type="text" name="" id="tb2">
+    <br>
+    鍵盤讀取<input type="text" id='kb'>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+
+</html>
