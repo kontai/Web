@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function getlocation() {
+
+
+            var loc = document.getElementById("getloc");
+            loc.innerHTML = '將要跳轉頁面'
+            setTimeout(nextPage(), 5000)
+        }
+
+        function nextPage() {
+            location.href = 'https://www.yahoo.com.tw'
+        }
+    </script>
+    <style type="css">
+        .Body{
+            background-color: black;
+            align-content: center;
+
+        }
+    </style>
+
+</head>
+
+<body class="Body">
+    <textarea name="" id="getloc" cols="30" rows="10"></textarea><br>
+    <input type="button" onclick="getlocation()"><br>
+</body>
+
+</html>

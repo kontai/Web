@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head lang = "zh">
+	<meta charset = "utf-8">
+	<link rel = "stylesheet" href = "mystyle.css">
+	<script type = "text/javascript">
+        function modifyBook(btn) {
+            let cnt_col = btn.parentNode.parentNode.cells[3];
+            if (!isNaN(cnt_col.innerHTML)) {
+                cnt_col.innerHTML = "<input type='text' value='" + cnt_col.innerHTML +
+                    "'  onfocus='this.setSelectionRange(0,this.value.length)' autofocus onblur='conf(this)' id='mytext'>";
+                document.getElementById('mytext').focus();
+            }
+        }
+
+        function conf(btn) {
+            let x = btn.parentNode;
+            if (!isNaN(btn.value)) {
+
+                x.innerHTML = btn.value;
+                return;
+            } else {
+                alert("請輸入數字!");
+            }
+        }
+
+        function delBook(btn) {
+            let index = btn.parentNode.parentNode;
+            let tb = document.getElementById("tb");
+            tb.deleteRow(index.rowIndex);
+        }
+
+        function addRow() {
+            let tb = document.getElementById('tb');
+            let newRow = tb.insertRow(1);
+            let len = tb.rows[0].cells.length;
+            for (let i = 0; i < len; i++) {
+                let tmp = newRow.insertCell(i);
+            }
+            tb.rows[1].cells[0].innerHTML = "<input type='checkbox' >";
+            tb.rows[1].cells[1].innerHTML = 'C';
+            tb.rows[1].cells[2].innerHTML = 500;
+            tb.rows[1].cells[3].innerHTML = 0;
+            tb.rows[1].cells[4].innerHTML = "<input type='button' value='修改' onclick='modifyBook(this)'><input type='button' value='刪除' onclick='delBook(this)'>";
+        }
+	</script>
+</head>
+
+<body>
+<div>
+	Table Demo
+</div>
+<hr>
+<br>
+<ul style = "width:50% ;margin:auto ; list-style:none">
+	<li>
+		<input type = "button" value = "新增書籍" onclick = "addRow()"><input type = "button" value = "刪除書籍"
+		                                                                  onclick = "delRow()">
+		<input type = "text" style = "width:50%" placeholder = "請輸入要增加的書名" disabled = "disabled" name = "" id = "">
+		<input type = "text" style = "width:10%" placeholder = "請輸入要增加的書名" disabled = "disabled" name = "" id = "">
+		<input type = "text" style = "width:10%" placeholder = "請輸入要增加的書名" disabled = "disabled" name = "" id = "">
+	</li>
+</ul>
+<br>
+<table id = "tb">
+	<tr>
+		<th><input type = "checkbox" name = "chk" id = ""></th>
+		<th>書名</th>
+		<th>價格</th>
+		<th>數量</th>
+		<th>操作</th>
+	</tr>
+	<tr>
+		<th><input type = "checkbox" name = "chk" id = ""></th>
+		<td>C++</td>
+		<td>550</td>
+		<td>0</td>
+		<td>
+			<input type = "button" value = "修改" onclick = "modifyBook(this)">
+			<input type = "button" value = "刪除" onclick = "delBook(this)">
+		</td>
+	</tr>
+	<tr>
+		<th><input type = "checkbox" name = "chk" id = ""></th>
+		<td>JAVA</td>
+		<td>600</td>
+		<td>0</td>
+		<td>
+			<input type = "button" value = "修改" onclick = "modifyBook(this)">
+			<input type = "button" value = "刪除" onclick = "delBook(this)">
+		</td>
+	</tr>
+	<tr>
+		<th><input type = "checkbox" name = "chk" id = ""></th>
+		<td>PYTHON</td>
+		<td>300</td>
+		<td>0</td>
+		<td>
+			<input type = "button" value = "修改" onclick = "modifyBook(this)">
+			<input type = "button" value = "刪除" onclick = "delBook(this)">
+		</td>
+	</tr>
+</table>
+</body>
+
+</html>

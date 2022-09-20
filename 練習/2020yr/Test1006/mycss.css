@@ -1,0 +1,33 @@
+body{
+    background-color: #1b809e;
+
+}
+table{
+    width:60%;
+    /*height:500px;*/
+    margin:auto;
+    border:1px solid ;
+    border-spacing:0px 0px;
+    box-shadow: 2px 2px 3px  black;
+}
+
+th{
+    background-image: radial-gradient(circle,black 80%,darkred) ;
+    color:darkturquoise;
+    background-color: #0D3349;
+    border:1px solid ;
+    height: 50px;
+}
+
+td{
+    text-align: center;
+    color:white;
+    background-color: #0D3349;
+    border:1px solid ;
+    height: 60px;
+}
+
+td input[type="button"]{
+    width:49%;
+    height: 100%;
+}

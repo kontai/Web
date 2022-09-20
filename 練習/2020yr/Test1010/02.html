@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head lang = "zh">
+		<meta charset = "utf-8">
+		<title>1010-01</title>
+		<!--	導入Jquery庫-->
+		<script src = "../../js庫/jquery-3.5.1.js" charset = "UTF-8"></script>
+		<script type = "text/javascript">
+			// id選擇器
+            function seleID() {
+                let x = $("#div01");
+                console.log(x.html());
+            }
+
+            //標籤選擇器
+            function seleTag(){
+                let x=$("input");
+                console.log(x.length);
+                console.log(x.nextAll()[5].value);
+            }
+
+            // 類選擇器
+            function seleClass(){
+                let x=$(".text");
+                console.log(x.val());
+            }
+
+	function seleCombo(){
+                let x=$("h3,input");
+                console.log(x.length);
+	}
+		</script>
+	</head>
+	<body>
+		<h3>基本選擇器</h3>
+		<input type = "button" value = "ID選擇器" onclick = "seleID()">
+		<input type = "button" value = "標籤選擇器" onclick = "seleTag()">
+		<input type = "button" value = "類選擇器" onclick="seleClass()">
+		<input type = "button" value = "組合選擇器" onclick="seleCombo()">
+		<hr>
+		<input type = "text" name = "" id = "t01" value="abc" class="text">
+		<div id = "div01">
+			Demo
+		</div>
+		<div ></div>
+	</body>
+</html>

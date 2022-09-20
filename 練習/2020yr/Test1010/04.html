@@ -1,0 +1,80 @@
+<!doctype html>
+<!--suppress ALL -->
+<html>
+	<head lang = "zh">
+		<meta charset = "UTF-8">
+		<title></title>
+		<style>
+            body {
+                background: rgb(200, 100, 100);
+            }
+
+            input[type="text"] {
+                margin-right: 20px;
+            }
+
+            h2 {
+                /*display:inline-flex;*/
+                /*width:20px;*/
+                border-bottom: 3px solid darkolivegreen;
+                margin-bottom: 20px;
+                text-align: center;
+                color: white;
+
+            }
+		</style>
+		<script src = "../../js庫/jquery-3.5.1.js" type = "text/javascript"></script>
+		<script>
+            function getAttr() {
+                let x = $("#divTop > #tg");
+                console.log("ID:tg 的 value=" + x.attr("value"));
+            }
+
+            function setAttr() {
+                let x = $("#divTop > #tg");
+                x.attr("type", "button");
+
+            }
+
+            function getStyle() {
+                let x = $("#divTop > #tg");
+                //獲取寬度
+                console.log(x.css("width"));
+            }
+
+            function setStyle(){
+                let x=$("#divTop>#tg");
+                // x.css("background-color","blue");
+	            x.css({"background-color":"black","color":"white"});
+            }
+		</script>
+	</head>
+	<body>
+		<h2>JQuery屬性操作</h2>
+		<br>
+
+		<input type = "button" value = "getAttr()" onclick = "getAttr()">
+		<input type = "button" value = "setAttr()" onclick = "setAttr()">
+		<input type = "button" value = "getStyle()" onclick = "getStyle()">
+		<input type = "button" value = "setStyle()" onclick = "setStyle()">
+
+		<hr>
+		<div id = "divTop">
+			<input type = "text" name = "" style = "width:61px" id = "">
+			<input type = "text" name = "" style = "width:62px" id = "">
+			<input type = "text" name = "" style = "width:63px" id = "" value = "up">
+			<input type = "text" name = "" style = "width:64px" id = "tg" value = "v">
+			<input type = "text" name = "" style = "width:65px" id = "" value = "down">
+			<input type = "text" name = "" style = "width:66px" id = "" value = "end">
+		</div>
+		<br>
+		<div id = "divTop2">
+			<input type = "text" name = "" id = "">
+			<input type = "text" name = "" id = "">
+			<input type = "text" name = "" id = "">
+			<input type = "text" name = "" id = "">
+			<input type = "text" name = "" id = "">
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang = "zh">
+	<head>
+		<meta http-equiv = "Content-Type" content = "text/html;charset=UTF-8">
+		<title>Jquery Demo</title>
+		<style>
+            #div1 {
+                background: #200;
+                /*width:500px;*/
+                height: 300px;
+            }
+
+            #div2 {
+                background: #0f0;
+                height: 300px;
+            }
+		</style>
+		<!--		導入jquery庫-->
+		<script src = "../../js庫/jquery-3.5.1.js"></script>
+		<script type = "text/javascript">
+            $(function () {
+                // $("#div1").show(3000);
+                // $("#div2").hide(3000);
+                $("#div1").show(3000);
+                $("#div2").hide(1000);
+                $("div").toggle(2000);
+                $("#div1").slideUp(3000);
+                $("#div2").slideDown(3000);
+                $("#div1").fadeOut(3000);
+                $("#div2").slideUp(3000);
+                // $("#div2").css("background","yellow");
+                $("#div1").fadeIn(3000);
+                $("#div1").hide(1000);
+
+                // $('div').toggle(2000);
+                // $("#div1").slideDown(3000);
+                // $("#div2").slideUp(3000);
+            })
+		</script>
+	</head>
+	<body>
+		<span id = "sp" style = "font-size: 20px "><label for = "sp">abc</label></span>
+		<div id = "div1">
+
+		</div>
+		<div id = "div2">
+
+		</div>
+	</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang = "zh">
+	<head>
+		<meta http-equiv = "Content-Type" content = "text/html;charset=UTF-8">
+		<title>POSITION Demo</title>
+		<style type = "text/css">
+			div{
+				font-size: 20px;
+			}
+            #div1 {
+                height: 300px;
+                width: 250px;
+                background: #0f6674;
+                position: relative;
+                top: 60px;
+                left: 30px;
+                color: whitesmoke;
+            }
+            #div2{
+                height: 300px;
+                width: 250px;
+                background: #0f6674;
+                position: relative;
+                top: 50px;
+                left: 0px;
+                color: whitesmoke;
+            }
+            #div3{
+                height: 300px;
+                width: 250px;
+                background: #0f6674;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                color: whitesmoke;
+            }
+
+            #div1-1, #div2-1, #div3-1 {
+                background: blue;
+                width: 200px;
+                height: 100px;
+                /*position: absolute;*/
+                /*top: -0px;*/
+                /*left: 0px;*/
+	            float: left;
+            }
+            #div1-3{
+                float: left;
+            }
+
+            #div1-2 {
+                background: red;
+                width: 200px;
+                height: 100px;
+                position: relative;
+                /*position: absolute;*/
+                top: 30px;
+                left: 50px;
+	            clear:both;
+            }
+             #div2-2, #div3-2 {
+	             color:blue;
+                background: orange;
+                width: 200px;
+                height: 100px;
+                position: relative;
+                /*position: absolute;*/
+                top: 20px;
+                left: 50px;
+            }
+		</style>
+
+
+	</head>
+
+
+	<body>
+		<div id = "div1">
+			div1
+			<div id = "div1-1">div1-1</div>
+			<div id = "div1-2">div1-2</div>
+			<div id = "div1-3">div1-3</div>
+		</div>
+		<hr>
+		<div id = "div2">
+			div2
+			<div id = "div2-1">div2-1</div>
+			<div id = "div2-2">div2-2</div>
+		</div>
+		<hr>
+		<div id = "div3">
+			div3
+			<div id = "div3-1">div3-1</div>
+			<div id = "div3-2">div3-2</div>
+		</div>
+	</body>
+</html>

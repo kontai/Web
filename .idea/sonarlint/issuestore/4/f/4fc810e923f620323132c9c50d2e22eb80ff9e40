@@ -1,9 +1,0 @@
-
-QWeb:AvoidCommentedOutCodeCheckÊ"Remove this commented out code.(õ´Àñ8âž×”Ï.
-OWeb:TableWithoutCaptionCheckž" Add a description to this table.(„õæ[8âž×”Ï.
-t Web:TableHeaderHasIdOrScopeCheck§";Add either an 'id' or a 'scope' attribute to this <th> tag.(ýÀ¶Ûûÿÿÿÿ8âž×”Ï.
-t Web:TableHeaderHasIdOrScopeCheck¥";Add either an 'id' or a 'scope' attribute to this <th> tag.(§âœ¯ýÿÿÿÿ8âž×”Ï.
-t Web:TableHeaderHasIdOrScopeCheck ";Add either an 'id' or a 'scope' attribute to this <th> tag.(™À§ãÿÿÿÿÿ8âž×”Ï.
-t Web:TableHeaderHasIdOrScopeCheck¤";Add either an 'id' or a 'scope' attribute to this <th> tag.(Õ´¶¹þÿÿÿÿ8âž×”Ï.
-o Web:TableHeaderHasIdOrScopeCheck£";Add either an 'id' or a 'scope' attribute to this <th> tag.(¥”¹§8âž×”Ï.
-t Web:TableHeaderHasIdOrScopeCheck¦";Add either an 'id' or a 'scope' attribute to this <th> tag.(éñ¼¶þÿÿÿÿ8âž×”Ï.

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang = "zh">
+<head>
+	<title>?</title>
+	<meta charset = "utf-8" />
+	<link rel = "stylesheet" href = "mycss.css" />
+	<script type = "text/javascript">
+        function queryQTY(btn) {
+            console.log(Number("a"));   //NaN
+            let col = btn.parentNode.parentNode.cells[3];
+            if (!isNaN(col.innerHTML)) {
+                // col.innerHTML = "<input type = 'text' autofocus value='" + col.innerHTML + "' onblur='ob(this)' id='mytext' onfocus='this.selectionstart=this.selectionEnd=this.value.length'>";
+                col.innerHTML = "<input type = 'text' autofocus value='" + col.innerHTML + "' onblur='ob(this)' id='mytext' onfocus='this.setSelectionRange(0,this.value.length)'>";
+
+                document.getElementById("mytext").focus();
+            }else{
+                console.log("必須是數字");
+            }
+        }
+
+        function ob(btn) {
+            // let x = document.getElementById('tb');
+            // let row = (btn.parentNode.parentNode).rowIndex;
+            let col = btn.parentNode;
+            console.log(col.innerHTML);
+            if(!isNaN(btn.value)){
+                col.innerHTML=btn.value;
+            }
+        }
+
+        function delRow(btn) {
+            console.log("134");
+            let x = document.getElementById('tb');
+            let cell = btn.parentNode.parentNode;
+            x.deleteRow(cell.rowIndex);
+        }
+	</script>
+</head>
+<body>
+<div style = "color:darkkhaki;width:200px;margin:auto"><h2>Table Demo</h2></div>
+<hr />
+<table id = "tb">
+	<tr>
+		<th><input type = "checkbox" name = "" id = ""></th>
+		<th>書名</th>
+		<th>單價</th>
+		<th>數量</th>
+		<th>操作</th>
+	</tr>
+	<tr>
+		<td><input type = "checkbox" name = "" id = ""></td>
+		<td>C++</td>
+		<td>500</td>
+		<td>2</td>
+		<td>
+			<input type = "button" value = "修改" onclick = "queryQTY(this)">
+			<input type = "button" value = "刪除" onclick = "delRow(this)">
+		</td>
+	</tr>
+	<tr>
+		<td><input type = "checkbox" name = "" id = ""></td>
+		<td>JAVAtd>
+		<td>600</td>
+		<td>1</td>
+		<td>
+			<input type = "button" value = "修改">
+			<input type = "button" value = "刪除">
+		</td>
+	</tr>
+	<tr>
+		<td><input type = "checkbox" name = "" id = ""></td>
+		<td>C</td>
+		<td>450</td>
+		<td>1</td>
+		<td>
+			<input type = "button" value = "修改">
+			<input type = "button" value = "刪除">
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -15,18 +15,19 @@
 		<script>
 			//显示广告
 			function showAd(){
-				$("#img1").slideDown(2000);
-				setTimeout("hideAd()",3000);
+				$("#img1").fadeIn(500);
+				setTimeout("hideAd()",300);
 			}
 			
 			//隐藏广告
 			function hideAd(){
-				$("#img1").slideUp(2000);
+				$("#img1").fadeOut(200);
 			}
 			
 			
 			$(function(){
-				setTimeout("showAd()",3000);
+			    setInterval("showAd()",600);
+
 				
 			});
 		</script>
